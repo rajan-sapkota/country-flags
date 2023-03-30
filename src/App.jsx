@@ -41,9 +41,9 @@ function App() {
     <div>
       {
         countryData && countryData.map((item, index)=>{
-           return (<div className="card"><h2 key={index}>{(item.name.common)}</h2>
+           return (<div><h2 key={index}>{(item.name.common)}</h2>
            <img src={item.flags.png} alt="countryflag"/>
-           console.log(index)
+           {console.log(index)}
            </div>
            )
         })
